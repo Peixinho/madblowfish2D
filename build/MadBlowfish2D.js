@@ -765,7 +765,7 @@ SceneCanvas.prototype.Draw = function () {
 
           // Camera Zoom
           if ((this.camera.transformation.scale.x != 1 || this.camera.transformation.scale.y != 1)) {
-              ctx.translate(-this.GetWidth() * (this.camera.transformation.scale.x * 0.5 - 0.5), -this.GetHeight() * (this.camera.transformation.scale.y * 0.5 - 0.5));
+              ctx.translate(-this.GetWidth() * (this.camera.transformation.scale.x * (0.5 - 0.5)), -this.GetHeight() * (this.camera.transformation.scale.y * (0.5 - 0.5)));
               ctx.scale(this.camera.transformation.scale.x, this.camera.transformation.scale.y);
           }
 
